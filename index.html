@@ -2,255 +2,161 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Document </title>
+    <meta charset="UTF-8">
+    <title>Document </title>
 </head>
 
 <body>
-	<p>Taxi service</p>
+<p>Taxi service</p>
 
-	<script>
-		var cars = [
-		{
-			marka: "BMW",
-			enginePover: 200,
-			owner: {
-				name: "Oleh ",
-				age: 36,
-				drivingExperience: 11
-			},
-			price: 35000,
-			yearOfRelease: 2015,
+<script>
+    var cars = [
+        {
+            marka: "BMW",
+            enginePover: 200,
+            owner: {
+                name: "Oleh ",
+                age: 36,
+                drivingExperience: 11
+            },
+            price: 35000,
+            yearOfRelease: 2015,
 
-		},
-		
-		 {
-			marka: "Volkswagen",
-			enginePover: 150,
-			owner: {
-				name: "Vasil ",
-				age: 30,
-				drivingExperience: 12
-			},
-			price: 34000,
-			yearOfRelease: 2017
+        },
 
-		}
-		
-		, {
-			marka: "Toyota ",
-			enginePover: 150,
-			owner: {
-				name: "Kolia ",
-				age: 20,
-				drivingExperience: 2
-			},
-			price: 30000,
-			yearOfRelease: 2015
+        {
+            marka: "Volkswagen",
+            enginePover: 150,
+            owner: {
+                name: "Vasil ",
+                age: 30,
+                drivingExperience: 12
+            },
+            price: 34000,
+            yearOfRelease: 2017
 
-		}
+        }
 
-		, 
-			{
-			marka: "Mazda",
-			enginePover: 200,
-			owner: {
-				name: "Ihor ",
-				age: 45,
-				drivingExperience: 15
-			},
-			price: 20000,
-			yearOfRelease: 2005
+        , {
+            marka: "Toyota ",
+            enginePover: 150,
+            owner: {
+                name: "Kolia ",
+                age: 20,
+                drivingExperience: 2
+            },
+            price: 30000,
+            yearOfRelease: 2015
 
-		}
-		,
-		{
-			marka: " Audi",
-			enginePover: 250,
-			owner: {
-				name: "Boris",
-				age: 56,
-				drivingExperience: 20
-			},
-			price: 29000,
-			yearOfRelease: 2010
+        }
 
-		}
-			,
-		 {
-			marka: "Marcedes",
-			enginePover: 250,
-			owner: {
-				name: "Taras ",
-				age: 23,
-				drivingExperience: 5
-			},
-			price: 25000,
-			yearOfRelease: 2008
+        ,
+        {
+            marka: "Mazda",
+            enginePover: 200,
+            owner: {
+                name: "Ihor ",
+                age: 45,
+                drivingExperience: 15
+            },
+            price: 20000,
+            yearOfRelease: 2005
 
-		}
-		,
-		
-		 {
-			marka: "Kia ",
-			enginePover: 150,
-			owner: {
-				name: "Bohdan ",
-				age: 40,
-				drivingExperience: 16
-			},
-			price: 13000,
-			yearOfRelease: 2010
+        }
+        ,
+        {
+            marka: " Audi",
+            enginePover: 250,
+            owner: {
+                name: "Boris",
+                age: 56,
+                drivingExperience: 20
+            },
+            price: 29000,
+            yearOfRelease: 2010
 
-		}
-		,
-		
-		
-		{
-			marka: "Huindai ",
-			enginePover: 150,
-			owner: {
-				name: "Volodia ",
-				age: 27,
+        }
+        ,
+        {
+            marka: "Marcedes",
+            enginePover: 250,
+            owner: {
+                name: "Taras ",
+                age: 23,
                 drivingExperience: 5
-			},
-			price: 18000,
-			yearOfRelease: 2014
+            },
+            price: 25000,
+            yearOfRelease: 2008
 
-		}
-		,
-		
-		
-		 {
-			marka: "Lexus ",
-			enginePover: 250,
-			owner: {
-				name: "Ostap ",
-				age: 50,
-				drivingExperience: 30
-			},
-			price: 35000,
-			yearOfRelease: 2014
-			}
-			,
-		
-		
-		 {
-			marka: "Subaru ",
-			enginePover: 150,
-			owner: {
-				name: "Andriy",
-				age: 35,
-				drivingExperience: 10
-			},
-			price: 16000,
-			yearOfRelease: 2015
+        }
+        ,
+
+        {
+            marka: "Kia ",
+            enginePover: 150,
+            owner: {
+                name: "Bohdan ",
+                age: 40,
+                drivingExperience: 16
+            },
+            price: 13000,
+            yearOfRelease: 2010
 
         }
         ,
 
 
-
-        ];
-
-
-
-
-        console.log("Cars:");
-		console.log(cars);
-
-
-
-
-
-
-		// cars[0].newowner = {
-		// 	name: "Li",
-		// 	age: 40,
-		// 	drivingExperience: 2
-		// }
-		// cars[0].newPover = Math.round (1.1 * cars[0].enginePover);
-		// cars[0].price = Math.round (1.05* cars[0].price);
-		//
-		//
-		//
-		//
-		// cars[1].owner ={
-	    // 	name: "Sezam",
-		// 	age: 45,
-		// 	drivingExperience: 32
-		// }
-		// cars[1].newPower =Math.round (1.1*cars[1].enginePover);
-        // cars[1].price = Math.round (1.05* cars[1].price);
-		//
-		//
-	    // cars[2].owner = {
-		// 	name: "Ted",
-		// 	age: 20,
-		// 	drivingExperience: 1
-		// }
-		// cars[2].newPower =Math.round (1.1*cars[2].enginePover);
-        // cars[2].price = Math.round (1.05* cars[2].price);
-		//
-		//
-	    // cars[3].owner = {
-		// 	name: "Max",
-		// 	age: 50,
-		// 	drivingExperience: 29
-		// }
-		// cars[3].newPower = Math.round( 1.1*cars[3].enginePover);
-        // cars[3].price = Math.round (1.05* cars[3].price);
-		//
-		//
-		//
-		//
-	    // cars[4].owner = {
-		// 	name: "Obama",
-		// 	age: 70,
-		// 	drivingExperience: 50
-		// }
-		// cars[4].newPower =Math.round( 1.1*cars[4].enginePover);
-        // cars[4].price = Math.round (1.05* cars[4].price);
-
-
-        // console.log("CarsAfter");
-		// console.log(cars[0],cars[1],cars[2],cars[3],cars[4]);
-
-
-		for( var k=0; k<cars.length; k=k+2) {
-			cars[k].enginePover=cars[k].enginePover * 1.1;
-
+        {
+            marka: "Huindai ",
+            enginePover: 150,
+            owner: {
+                name: "Volodia ",
+                age: 27,
+                drivingExperience: 5
+            },
+            price: 18000,
+            yearOfRelease: 2014
 
         }
-        console.log(cars);
+        ,
 
 
+        {
+            marka: "Lexus ",
+            enginePover: 250,
+            owner: {
+                name: "Ostap ",
+                age: 50,
+                drivingExperience: 30
+            },
+            price: 35000,
+            yearOfRelease: 2014
+        }
+        ,
 
 
-
-        sum = function (prop) {
-            var sum = 0;
-            for ( var i = 0; i<cars.length; i++) {
-                sum += this[i][prop]
-            }
+        {
+            marka: "Subaru ",
+            enginePover: 150,
+            owner: {
+                name: "Andriy",
+                age: 35,
+                drivingExperience: 10
+            },
+            price: 16000,
+            yearOfRelease: 2015
 
         }
-        console.log(cars["enginePower"]);
+        ,
+    ];
 
-		if(cars.owner.drivingExperience<5 || cars.owner.age>25) {
-		console.log('U need courses');
-		}
+    for (var k = 0; k < cars.length; k = k + 2) {
+        cars[k].enginePover = cars[k].enginePover * 1.1;
+    }
+    console.log(cars);
 
 
-
-
-
-		// var sum=0;
-		// for(var key in cars) {
-        //     sum = sum + cars[key];
-        // }
-		// console.log(sum);
-	</script>
+</script>
 </body>
 
 </html>
