@@ -57,7 +57,7 @@
             owner: {
                 name: "Ihor ",
                 age: 45,
-                drivingExperience: 15
+                drivingExperience: 1
             },
             price: 20000,
             yearOfRelease: 2005
@@ -70,7 +70,7 @@
             owner: {
                 name: "Boris",
                 age: 56,
-                drivingExperience: 20
+                drivingExperience: 2
             },
             price: 29000,
             yearOfRelease: 2010
@@ -97,7 +97,7 @@
             owner: {
                 name: "Bohdan ",
                 age: 40,
-                drivingExperience: 16
+                drivingExperience: 4
             },
             price: 13000,
             yearOfRelease: 2010
@@ -151,11 +151,32 @@
     ];
 
     for (var k = 0; k < cars.length; k = k + 2) {
-        cars[k].enginePover = cars[k].enginePover * 1.1;
+        cars[k].enginePover = Math.round(cars[k].enginePover * 1.1);
+        cars[k].price = Math.round(cars[k].price * 1.05);
     }
     console.log(cars);
 
+    for (var i = 0; i < cars.length; i++) {
+        if (cars[i].owner.drivingExperience < 5 && cars[i].owner.age > 25) {
+            ++cars[i].owner.drivingExperience;
 
+            let message = "Owner: " + cars[i].owner.name + " need courses, new exp.= " + cars[i].owner.drivingExperience;
+            console.log(message);
+        }
+    }
+
+
+    let sum = 0;
+    for (let i = 0; i < cars.length; i++) {
+        sum = sum + cars[i].price;
+
+    }
+      console.log(sum);
+
+    if (sum>5000) {
+        cars.pop();
+        console.log(cars);
+    }
 </script>
 </body>
 
