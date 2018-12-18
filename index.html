@@ -177,6 +177,29 @@
         cars.pop();
         console.log(cars);
     }
+
+
+    function random(carsRandom) {
+        let rand = Math.floor(Math.random() * carsRandom.length);
+        let message = "Автомобіль " + carsRandom[rand].marka + " з водієм " + carsRandom[rand].owner.name + " виїхав за вами ";
+        console.log(message);
+
+        nextMessage(cars[rand].owner.name,cars[rand].marka);
+
+    }
+    function nextMessage (name, marka){
+        console.log( name + " прибув за вами ");
+        console.log(" марки " + marka);
+    }
+    random(cars)
+
+
+    // var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+    //
+    // var rand = Math.floor(Math.random() * arr.length);
+    // alert( arr[rand] );
+
+
 </script>
 </body>
 
