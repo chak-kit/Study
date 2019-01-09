@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Repeat</title>
+</head>
+<body>
+<script>
+    // let arr = [1, 6, "JS", 22, "Okten"];
+    // let anotherArr = ['Roman', 'Galina', 'JS', '22', 'Oknet'];
+    //
+    // function arrayLoger(loggedArray) {
+    //     if (loggedArray.length === undefined) {
+    //         console.log('Not ARRAY');
+    //     } else {
+    //         for (let i = 0; i < loggedArray.length; i++) {
+    //             console.log(loggedArray[i]);
+    //         }
+    //         console.log("_____");
+    //     }
+    // }
+    // arrayLoger(arr);
+    // arrayLoger(anotherArr);
+    // arrayLoger([1,2,3,4]);
+    //
+    // arrayLoger(3);
+    // // немає проперті length
+
+
+    let arr = [1, 6, "JS", 22, "Okten"];
+    let anotherArr = ['Roman', 'Galina', 'JS', '22', 'Oknet'];
+
+
+    function arrayConcater(loggedArray) {
+        let newArray = [];
+            for (let i = 0; i< loggedArray.length; i++) {
+            let a = loggedArray[i] + ' I am here ';
+            newArray.push(a)
+            }
+        arrayLoger(newArray);
+        console.log('____');
+    }
+
+     function  arrayLoger(arrayToLog) {
+        for (let i =0; i<arrayToLog.length; i++) {
+            console.log(arrayToLog[i]);
+        }
+     }
+
+
+    arrayConcater(arr);
+    arrayConcater(anotherArr);
+    arrayConcater([1,2,3,4]);
+
+
+</script>
+</body>
+</html>
