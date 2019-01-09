@@ -179,19 +179,22 @@
     }
 
 
-    function random(carsRandom) {
-        let rand = Math.floor(Math.random() * carsRandom.length);
-        let message = "Автомобіль " + carsRandom[rand].marka + " з водієм " + carsRandom[rand].owner.name + " виїхав за вами ";
-        console.log(message);
+    function rand om(carsRandom) {
+        return Math.floor(Math.random() * carsRandom.length);
 
-        nextMessage(cars[rand].owner.name,cars[rand].marka);
+
+        // nextMessage(cars[rand].owner.name,cars[rand].marka);
 
     }
+
     function nextMessage (name, marka){
         console.log( name + " прибув за вами ");
         console.log(" марки " + marka);
     }
-    random(cars)
+
+
+    var i = random(cars);
+    nextMessage (cars[i].owner.name, cars[i].marka)
 
 
     // var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
